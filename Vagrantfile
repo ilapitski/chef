@@ -19,13 +19,13 @@ SCRIPT
 
   config.vm.box = "sbeliakou/centos-6.7-x86_64"
   config.vm.network "private_network", ip: "192.168.33.20"
-  config.vm.network "forwarded_port", guest: 80, host: 8180
-  config.vm.network "forwarded_port", guest: 8080, host: 8080
-  config.vm.hostname = "chef1"
+  #config.vm.network "forwarded_port", guest: 80, host: 8180
+  config.vm.network "forwarded_port", guest: 8080, host: 8090
+  config.vm.hostname = "chef02"
   
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", 2048]
-    vb.name = "taskchef1"
+    vb.name = "taskchef02"
   end
 
 end

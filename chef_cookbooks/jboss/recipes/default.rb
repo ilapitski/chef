@@ -68,7 +68,7 @@ template "#{ node['jboss']['jboss_home'] }/bin/run.sh" do
 end
 
 template "/etc/init.d/jboss" do
-  source "jboss_init_redhat.erb"
+  source "jboss_init_il.erb"
   owner 'root'
   group 'root'
   mode '0755'
@@ -78,6 +78,14 @@ template "/etc/init.d/jboss" do
      :jboss_ip => node['jboss']['jboss_ip']
   })
   not_if { File.exist?('/etc/init.d/jboss' )}
+end
+
+directory node['jboss']['jboss_log'] do
+  owner 'jboss'
+  group 'jboss'
+  mode '0755'
+  action :create
+  not_if { File.directory?( "#{ node['jboss']['jboss_log'] }" ) }
 end
 
 execute 'jboss folder ownership' do

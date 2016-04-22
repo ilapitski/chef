@@ -7,8 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
+
+# from web_cb use resource wrc
 web_cb_wrc "install nginx" do
 action :install
+# from nginx_cb use nginx_provider
 provider "nginx_cb_nginx_provider"
 end
 

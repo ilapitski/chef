@@ -7,8 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
+
+# from web_cb use resource wrc
 web_cb_wrc "install apache" do
 action :install
+# from apache_cb use apache_provider
 provider "apache_cb_apache_provider"
 end
 

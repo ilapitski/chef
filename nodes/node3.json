@@ -37,13 +37,13 @@
           "size": "29132",
           "refcount": "1"
         },
-        "vboxguest": {
-          "size": "284775",
-          "refcount": "2"
-        },
         "e1000": {
           "size": "135068",
           "refcount": "0"
+        },
+        "vboxguest": {
+          "size": "284775",
+          "refcount": "2"
         },
         "ext4": {
           "size": "378683",
@@ -57,20 +57,20 @@
           "size": "8193",
           "refcount": "1"
         },
-        "sd_mod": {
-          "size": "37030",
-          "refcount": "3"
-        },
-        "crc_t10dif": {
-          "size": "1209",
-          "refcount": "1"
-        },
         "video": {
           "size": "21654",
           "refcount": "0"
         },
         "output": {
           "size": "2409",
+          "refcount": "1"
+        },
+        "sd_mod": {
+          "size": "37030",
+          "refcount": "3"
+        },
+        "crc_t10dif": {
+          "size": "1209",
           "refcount": "1"
         },
         "ahci": {
@@ -251,8 +251,8 @@
           },
           "state": "up",
           "arp": {
-            "10.0.2.3": "52:54:00:12:35:03",
-            "10.0.2.2": "52:54:00:12:35:02"
+            "10.0.2.2": "52:54:00:12:35:02",
+            "10.0.2.3": "52:54:00:12:35:03"
           },
           "routes": [
             {
@@ -299,7 +299,7 @@
           ],
           "encapsulation": "Ethernet",
           "addresses": {
-            "08:00:27:AE:47:D3": {
+            "08:00:27:89:3D:6E": {
               "family": "lladdr"
             },
             "192.168.33.33": {
@@ -309,7 +309,7 @@
               "broadcast": "192.168.33.255",
               "scope": "Global"
             },
-            "fe80::a00:27ff:feae:47d3": {
+            "fe80::a00:27ff:fe89:3d6e": {
               "family": "inet6",
               "prefixlen": "64",
               "scope": "Link"
@@ -374,16 +374,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "1196007",
-              "packets": "19139",
+              "bytes": "1456793",
+              "packets": "23429",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "56553399",
-              "packets": "40617",
+              "bytes": "65313163",
+              "packets": "46841",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -392,16 +392,16 @@
           "eth1": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "21027",
-              "packets": "90",
+              "bytes": "29387",
+              "packets": "131",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "15804",
-              "packets": "82",
+              "bytes": "39882",
+              "packets": "133",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -412,7 +412,7 @@
     },
     "ipaddress": "10.0.2.15",
     "macaddress": "08:00:27:B4:16:15",
-    "ip6address": "fe80::a00:27ff:feae:47d3",
+    "ip6address": "fe80::a00:27ff:fe89:3d6e",
     "memory": {
       "swap": {
         "cached": "0kB",
@@ -420,26 +420,26 @@
         "free": "1277948kB"
       },
       "total": "1922148kB",
-      "free": "1432764kB",
-      "buffers": "30244kB",
-      "cached": "271192kB",
-      "active": "159596kB",
-      "inactive": "239596kB",
-      "dirty": "180268kB",
+      "free": "1423284kB",
+      "buffers": "30400kB",
+      "cached": "279376kB",
+      "active": "161276kB",
+      "inactive": "247108kB",
+      "dirty": "180440kB",
       "writeback": "0kB",
-      "anon_pages": "97676kB",
-      "mapped": "10352kB",
-      "slab": "63764kB",
-      "slab_reclaimable": "41248kB",
-      "slab_unreclaim": "22516kB",
-      "page_tables": "2588kB",
+      "anon_pages": "98772kB",
+      "mapped": "10712kB",
+      "slab": "64176kB",
+      "slab_reclaimable": "41652kB",
+      "slab_unreclaim": "22524kB",
+      "page_tables": "2328kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2239020kB",
-      "committed_as": "226804kB",
+      "committed_as": "226380kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "32072kB",
-      "vmalloc_chunk": "34359695864kB"
+      "vmalloc_chunk": "34359696888kB"
     },
     "cpu": {
       "0": {
@@ -448,7 +448,7 @@
         "model": "58",
         "model_name": "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
         "stepping": "9",
-        "mhz": "3192.746",
+        "mhz": "3192.756",
         "cache_size": "6144 KB",
         "physical_id": "0",
         "core_id": "0",
@@ -507,7 +507,7 @@
         "model": "58",
         "model_name": "Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz",
         "stepping": "9",
-        "mhz": "3192.746",
+        "mhz": "3192.756",
         "cache_size": "6144 KB",
         "physical_id": "0",
         "core_id": "1",
@@ -570,10 +570,10 @@
     "platform": "centos",
     "platform_version": "6.7",
     "platform_family": "rhel",
-    "uptime_seconds": 328,
-    "uptime": "5 minutes 28 seconds",
-    "idletime_seconds": 627,
-    "idletime": "10 minutes 27 seconds",
+    "uptime_seconds": 261,
+    "uptime": "4 minutes 21 seconds",
+    "idletime_seconds": 489,
+    "idletime": "8 minutes 09 seconds",
     "virtualization": {
       "systems": {
         "vbox": "guest"
@@ -585,13 +585,13 @@
     "filesystem": {
       "/dev/mapper/vg_epplkraw0166t2-lv_root": {
         "kb_size": "18261312",
-        "kb_used": "1357212",
-        "kb_available": "15969804",
+        "kb_used": "1365464",
+        "kb_available": "15961552",
         "percent_used": "8%",
         "mount": "/",
         "total_inodes": "1169168",
-        "inodes_used": "63660",
-        "inodes_available": "1105508",
+        "inodes_used": "63670",
+        "inodes_available": "1105498",
         "inodes_percent_used": "6%",
         "fs_type": "ext4",
         "mount_options": [
@@ -632,9 +632,9 @@
       },
       "vagrant": {
         "kb_size": "444951632",
-        "kb_used": "341741084",
-        "kb_available": "103210548",
-        "percent_used": "77%",
+        "kb_used": "363473604",
+        "kb_available": "81478028",
+        "percent_used": "82%",
         "mount": "/vagrant",
         "total_inodes": "1000",
         "inodes_used": "0",
@@ -715,8 +715,8 @@
     "virtualbox": {
       "host": {
         "language": "en_US",
-        "revision": "105871",
-        "version": "5.0.16"
+        "revision": "106931",
+        "version": "5.0.20"
       },
       "guest": {
         "guest_additions_version": "5.0.14",
@@ -730,7 +730,7 @@
         "host_rsa_public": "AAAAB3NzaC1yc2EAAAABIwAAAQEAtJhiQpULAdD00cg4dOF9wQhLti+HakCb2HPMb2Xae8W3Oj36cOIvRPHxmDeufwpWQ1t8M6/Lo+w5LBUablbODvOoYJunUU4ENg0GOAumZ5DnUuiA/+0+hZ/kb9CLRh/ISPP8sslwTZLLoTYELj1wsRJ1UO3I3qlkgWmpbm9OSfwyUWGfJAFnoQQGVmdRoU/RPM8+Fhvb4LkSNVBKiIa+fqrcDPJZBiKA+r+NgXU0NTztbIx/z4N2Ks83Gk28IcAJNFM3Bdz7xGObAQrlrXFB+iYHCudz4pC7DaEfqR3keNZ502YB0J405u7hWes2N7g+2nJMQuEvSdfsilD9+nW0Ow=="
       }
     },
-    "ohai_time": 1461260987.2409482,
+    "ohai_time": 1462226295.450046,
     "command": {
       "ps": "ps -ef"
     },
@@ -739,12 +739,12 @@
       "by_device": {
         "/dev/mapper/vg_epplkraw0166t2-lv_root": {
           "kb_size": "18261312",
-          "kb_used": "1335088",
-          "kb_available": "15991928",
+          "kb_used": "1365532",
+          "kb_available": "15961484",
           "percent_used": "8%",
           "total_inodes": "1169168",
-          "inodes_used": "63660",
-          "inodes_available": "1105508",
+          "inodes_used": "63670",
+          "inodes_available": "1105498",
           "inodes_percent_used": "6%",
           "fs_type": "ext4",
           "mount_options": [
@@ -792,9 +792,9 @@
         },
         "vagrant": {
           "kb_size": "444951632",
-          "kb_used": "341834216",
-          "kb_available": "103117416",
-          "percent_used": "77%",
+          "kb_used": "363473604",
+          "kb_available": "81478028",
+          "percent_used": "82%",
           "total_inodes": "1000",
           "inodes_used": "0",
           "inodes_available": "1000",
@@ -902,12 +902,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "18261312",
-          "kb_used": "1335088",
-          "kb_available": "15991928",
+          "kb_used": "1365532",
+          "kb_available": "15961484",
           "percent_used": "8%",
           "total_inodes": "1169168",
-          "inodes_used": "63660",
-          "inodes_available": "1105508",
+          "inodes_used": "63670",
+          "inodes_available": "1105498",
           "inodes_percent_used": "6%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -956,9 +956,9 @@
         },
         "/vagrant": {
           "kb_size": "444951632",
-          "kb_used": "341834216",
-          "kb_available": "103117416",
-          "percent_used": "77%",
+          "kb_used": "363473604",
+          "kb_available": "81478028",
+          "percent_used": "82%",
           "total_inodes": "1000",
           "inodes_used": "0",
           "inodes_available": "1000",
@@ -1039,13 +1039,13 @@
         "/dev/mapper/vg_epplkraw0166t2-lv_root,/": {
           "device": "/dev/mapper/vg_epplkraw0166t2-lv_root",
           "kb_size": "18261312",
-          "kb_used": "1335088",
-          "kb_available": "15991928",
+          "kb_used": "1365532",
+          "kb_available": "15961484",
           "percent_used": "8%",
           "mount": "/",
           "total_inodes": "1169168",
-          "inodes_used": "63660",
-          "inodes_available": "1105508",
+          "inodes_used": "63670",
+          "inodes_available": "1105498",
           "inodes_percent_used": "6%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1089,9 +1089,9 @@
         "vagrant,/vagrant": {
           "device": "vagrant",
           "kb_size": "444951632",
-          "kb_used": "341834216",
-          "kb_available": "103117416",
-          "percent_used": "77%",
+          "kb_used": "363473604",
+          "kb_available": "81478028",
+          "percent_used": "82%",
           "mount": "/vagrant",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2631,8 +2631,7 @@
       }
     },
     "recipes": [
-      "web_cb::run",
-      "apache_cb::apache_run"
+      "web_cb::run"
     ],
     "expanded_run_list": [
       "web_cb::run"

@@ -1,6 +1,0 @@
-{
-  "name": "jboss_deploy_app",
-  "run_list": [
-    "recipe[jboss]"
-  ]
-}
